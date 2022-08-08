@@ -112,4 +112,39 @@ public static String Deal()
 		
 		
 	}
+public static String crearresincroAR()
+{
+	return "{\r\n"
+			+ "    \"country\": \"AR\",\r\n"
+			+ "    \"customers\": [1,2,3,567]\r\n"
+			+ "}";
+}
+public static String crearresincroUY()
+{
+	return "{\r\n"
+			+ "    \"country\": \"UY\",\r\n"
+			+ "    \"customers\": [1,2,3,567]\r\n"
+			+ "}";
+}
+public static String crearresincroPY()
+{
+	return "{\r\n"
+			+ "    \"country\": \"PY\",\r\n"
+			+ "    \"customers\": [1,2,3,567]\r\n"
+			+ "}";
+}
+public static String crearresincrosinclientes()
+{
+	return "{\r\n"
+			+ "    \"country\": \"AR\",\r\n"
+			+ "    \"customers\": []\r\n"
+			+ "}";
+}
+public static String crearresincrosinpaís()
+{
+	return "{\r\n"
+			+ "    \"country\": \"\",\r\n"
+			+ "    \"customers\": [1,2,3,567]\r\n"
+			+ "}";
+}
 }

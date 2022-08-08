@@ -9,8 +9,6 @@ import org.testng.annotations.Test;
 import file.payload;
 
 
-
-
 public class DealsAutomation {
 
 
@@ -55,5 +53,39 @@ public class DealsAutomation {
 		// String placeId=js.getString("place_id");
 		// System.out.println(placeId);
 
+	}
+	
+	@Test
+	public void CrearResincronizacionAR()
+	{
+		String token = Authentication.ObtenerToken();
+		RestAssured.baseURI = "https://abi-conbees-orquestadordeals-tst.dev.abinbev-las.com";
+
+		String response = given()
+				.queryParam("country", "AR").queryParam("entidadOrigen", "PDA")
+				.header("Content-Type", "application/json")
+				.headers("Accept", "*/*")
+				.headers("Accept-Encoding", "gzip, deflate, br")
+				.headers("Connection", "keep-alive")
+				.headers("Authorization", "Bearer " + token)
+				.body(payload.Deal()).when().post("api/v1/deal/process").then().statusCode(200).extract().response()
+				.asString();
+
+		System.out.println(response);	
+	}
+	@Test
+	public void CrearResincronizacionUY()
+	{
+		
+	}
+	@Test
+	public void CrearResincronizacionPY()
+	{
+		
+	}
+	@Test
+	public void aaaar()
+	{
+		
 	}
 }
