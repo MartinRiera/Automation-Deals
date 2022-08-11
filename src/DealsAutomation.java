@@ -1,15 +1,19 @@
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;
+
 import static org.hamcrest.Matchers.*;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
 import file.payload;
 
 public class DealsAutomation {
 
+	
+	
 	@Test
 	public void GuardarDeal() {
 		String token = Authentication.ObtenerToken();
@@ -98,24 +102,66 @@ public class DealsAutomation {
 		given().queryParam("country", "AR")
 		.header("Content-Type", "application/json").headers("Accept", "*/*")
 		.headers("Accept-Encoding", "gzip, deflate, br").headers("Connection", "keep-alive")
-		.headers("Authorization", "Bearer " + token).body(payload.crearresincroPY()).when()
-		.post("/api/v1/deal/resincronizar/").then().statusCode(201).extract().response().asString();
+		.headers("Authorization", "Bearer " + token).body("1").when()
+		.post("/api/v1/deal/resincronizar/ejecutar").then().statusCode(200).extract().response().asString();
 		
-
 	}
 
 	@Test
 	public void EjecutarresincroUY() {
+		String token = Authentication.ObtenerToken();
+		RestAssured.baseURI = "https://abi-conbees-orquestadordeals-tst.dev.abinbev-las.com";
 
+		given().queryParam("country", "UY")
+		.header("Content-Type", "application/json").headers("Accept", "*/*")
+		.headers("Accept-Encoding", "gzip, deflate, br").headers("Connection", "keep-alive")
+		.headers("Authorization", "Bearer " + token).body("1").when()
+		.post("/api/v1/deal/resincronizar/ejecutar").then().statusCode(200).extract().response().asString();
+		
 	}
 
 	@Test
 	public void EjecutarresincroPY() {
+		String token = Authentication.ObtenerToken();
+		RestAssured.baseURI = "https://abi-conbees-orquestadordeals-tst.dev.abinbev-las.com";
 
+		given().queryParam("country", "PY")
+		.header("Content-Type", "application/json").headers("Accept", "*/*")
+		.headers("Accept-Encoding", "gzip, deflate, br").headers("Connection", "keep-alive")
+		.headers("Authorization", "Bearer " + token).body("1").when()
+		.post("/api/v1/deal/resincronizar/ejecutar").then().statusCode(200).extract().response().asString();
+		
 	}
 
+	@Test
+	public void CrearResincosinPais() {
+		String token = Authentication.ObtenerToken();
+		RestAssured.baseURI = "https://abi-conbees-orquestadordeals-tst.dev.abinbev-las.com";
+		String response = given()
+
+				.header("Content-Type", "application/json").headers("Accept", "*/*")
+				.headers("Accept-Encoding", "gzip, deflate, br").headers("Connection", "keep-alive")
+				.headers("Authorization", "Bearer " + token).body(payload.crearresincrosinpaís()).when()
+				.post("/api/v1/deal/resincronizar/").then().statusCode(400).extract().response().asString();
+	}
+	@Test
+	public void CrearResincosinClientes() {
+		String token = Authentication.ObtenerToken();
+		RestAssured.baseURI = "https://abi-conbees-orquestadordeals-tst.dev.abinbev-las.com";
+		String response = given()
+
+				.header("Content-Type", "application/json").headers("Accept", "*/*")
+				.headers("Accept-Encoding", "gzip, deflate, br").headers("Connection", "keep-alive")
+				.headers("Authorization", "Bearer " + token).body(payload.crearresincrosinclientes()).when()
+				.post("/api/v1/deal/resincronizar/").then().statusCode(400).extract().response().asString();
+	}
+	@Test
+	public void asaaawr() {
+
+	}
 	@Test
 	public void asaaar() {
 
 	}
+	
 }

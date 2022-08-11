@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-10T10:41:22 ART" name="Default suite" finished-at="2022-08-10T10:41:31 ART" duration-ms="8234">
+  <suite started-at="2022-08-11T12:26:36 ART" name="Default suite" finished-at="2022-08-11T12:26:49 ART" duration-ms="13135">
     <groups>
     </groups>
-    <test started-at="2022-08-10T10:41:22 ART" name="Default test" finished-at="2022-08-10T10:41:31 ART" duration-ms="8234">
+    <test started-at="2022-08-11T12:26:36 ART" name="Default test" finished-at="2022-08-11T12:26:49 ART" duration-ms="13135">
       <class name="DealsAutomation">
-        <test-method signature="CrearResincronizacionAR()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:22 ART" name="CrearResincronizacionAR" finished-at="2022-08-10T10:41:25 ART" duration-ms="2735" status="PASS">
+        <test-method signature="CrearResincosinClientes()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:36 ART" name="CrearResincosinClientes" finished-at="2022-08-11T12:26:39 ART" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CrearResincosinClientes -->
+        <test-method signature="CrearResincosinPais()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:39 ART" name="CrearResincosinPais" finished-at="2022-08-11T12:26:40 ART" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CrearResincosinPais -->
+        <test-method signature="CrearResincronizacionAR()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:40 ART" name="CrearResincronizacionAR" finished-at="2022-08-11T12:26:41 ART" duration-ms="1016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CrearResincronizacionAR -->
-        <test-method signature="CrearResincronizacionPY()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:25 ART" name="CrearResincronizacionPY" finished-at="2022-08-10T10:41:26 ART" duration-ms="696" status="PASS">
+        <test-method signature="CrearResincronizacionPY()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:41 ART" name="CrearResincronizacionPY" finished-at="2022-08-11T12:26:42 ART" duration-ms="886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CrearResincronizacionPY -->
-        <test-method signature="CrearResincronizacionUY()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:26 ART" name="CrearResincronizacionUY" finished-at="2022-08-10T10:41:27 ART" duration-ms="808" status="PASS">
+        <test-method signature="CrearResincronizacionUY()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:42 ART" name="CrearResincronizacionUY" finished-at="2022-08-11T12:26:43 ART" duration-ms="866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CrearResincronizacionUY -->
-        <test-method signature="EjecutarresincroAR()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:27 ART" name="EjecutarresincroAR" finished-at="2022-08-10T10:41:27 ART" duration-ms="717" status="PASS">
+        <test-method signature="EjecutarresincroAR()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:43 ART" name="EjecutarresincroAR" finished-at="2022-08-11T12:26:44 ART" duration-ms="779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EjecutarresincroAR -->
-        <test-method signature="EjecutarresincroPY()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:27 ART" name="EjecutarresincroPY" finished-at="2022-08-10T10:41:27 ART" duration-ms="1" status="PASS">
+        <test-method signature="EjecutarresincroPY()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:44 ART" name="EjecutarresincroPY" finished-at="2022-08-11T12:26:45 ART" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EjecutarresincroPY -->
-        <test-method signature="EjecutarresincroUY()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:27 ART" name="EjecutarresincroUY" finished-at="2022-08-10T10:41:27 ART" duration-ms="1" status="PASS">
+        <test-method signature="EjecutarresincroUY()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:45 ART" name="EjecutarresincroUY" finished-at="2022-08-11T12:26:45 ART" duration-ms="776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EjecutarresincroUY -->
-        <test-method signature="GuardarDeal()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:27 ART" name="GuardarDeal" finished-at="2022-08-10T10:41:28 ART" duration-ms="740" status="PASS">
+        <test-method signature="GuardarDeal()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:45 ART" name="GuardarDeal" finished-at="2022-08-11T12:26:46 ART" duration-ms="763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuardarDeal -->
-        <test-method signature="ProcesarDealsAZURE()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:28 ART" name="ProcesarDealsAZURE" finished-at="2022-08-10T10:41:31 ART" duration-ms="2486" status="PASS">
+        <test-method signature="ProcesarDealsAZURE()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:46 ART" name="ProcesarDealsAZURE" finished-at="2022-08-11T12:26:49 ART" duration-ms="3192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProcesarDealsAZURE -->
-        <test-method signature="asaaar()[pri:0, instance:DealsAutomation@581ac8a8]" started-at="2022-08-10T10:41:31 ART" name="asaaar" finished-at="2022-08-10T10:41:31 ART" duration-ms="1" status="PASS">
+        <test-method signature="asaaar()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:49 ART" name="asaaar" finished-at="2022-08-11T12:26:49 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asaaar -->
+        <test-method signature="asaaawr()[pri:0, instance:DealsAutomation@76c3e77a]" started-at="2022-08-11T12:26:49 ART" name="asaaawr" finished-at="2022-08-11T12:26:49 ART" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asaaawr -->
       </class> <!-- DealsAutomation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

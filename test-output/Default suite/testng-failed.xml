@@ -5,7 +5,7 @@
     <classes>
       <class name="DealsAutomation">
         <methods>
-          <include name="EjecutarresincroAR"/>
+          <include name="CrearResincosinPais"/>
         </methods>
       </class> <!-- DealsAutomation -->
     </classes>

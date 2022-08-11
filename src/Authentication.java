@@ -31,7 +31,7 @@ public static String ObtenerToken()
 		
 		JsonPath js=new JsonPath(respuestaLogin); //for parsing Json
 		String token = js.getString("access_token");
-		System.out.println(token);
+		//System.out.println(token);
 	return token;
 	}
 }
