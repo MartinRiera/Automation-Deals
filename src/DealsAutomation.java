@@ -39,7 +39,7 @@ public class DealsAutomation {
 		String response = given().queryParam("country", "AR").queryParam("entidadOrigen", "PDA")
 				.header("Content-Type", "application/json").headers("Accept", "*/*")
 				.headers("Accept-Encoding", "gzip, deflate, br").headers("Connection", "keep-alive")
-				.headers("Authorization", "Bearer " + token).body(payload.Deal()).when().post("api/v1/deal/process")
+				.headers("Authorization", "Bearer " + token).body("1").when().post("api/v1/deal/process")
 				.then().statusCode(200).extract().response().asString();
 
 		// System.out.println(response);
