@@ -5,7 +5,7 @@
     <classes>
       <class name="DealsAutomation">
         <methods>
-          <include name="CrearResincosinPais"/>
+          <include name="ProcesarDealsAZURE"/>
         </methods>
       </class> <!-- DealsAutomation -->
     </classes>
