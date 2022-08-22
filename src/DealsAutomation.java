@@ -27,8 +27,8 @@ public class DealsAutomation {
 
 		//System.out.println(jsonDeal);
 		JsonPath js=new JsonPath(jsonDeal); //for parsing Json
-		String dealid =js.getString("dealId");
-		System.out.println(dealid);
+		String dealId =js.getString("dealId");
+		System.out.println(dealId);
 
 	}
 
