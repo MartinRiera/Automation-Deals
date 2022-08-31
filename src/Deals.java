@@ -10,12 +10,13 @@ import org.testng.annotations.Test;
 
 import file.payload;
 
-public class DealsAutomation {
+public class Deals {
 
 	SessionFilter session = new SessionFilter();
 
 	@Test
 	public void GuardarDeal() {
+		//https://dev.azure.com/ab-inbev/SAZ_Commercial_BEES_20/_workitems/edit/1740779
 		String token = Authentication.ObtenerToken();
 		String jsonDeal = payload.Deal();
 		RestAssured.baseURI = "https://abi-conbees-orquestadordeals-tst.dev.abinbev-las.com";
@@ -52,13 +53,27 @@ public class DealsAutomation {
 
 
 	@Test
-	public void asaaawr() {
-
+	public void ValidarCreacionRegistroBandejaSalida() {
+//https://dev.azure.com/ab-inbev/SAZ_Commercial_BEES_20/_workitems/edit/1740793
 	}
 
 	@Test
+	public void CrearPOSTBeesPrice1() {
+//https://dev.azure.com/ab-inbev/SAZ_Commercial_BEES_20/_workitems/edit/1740809
+	}
+	public void CrearPUTBeesPrice1() {
+
+	}
 	public void asaaar() {
 
 	}
+	public void asaaaEr() {
 
+	}
+	public void asaaQar() {
+
+	}
+	public void asAaaar() {
+
+	}
 }
