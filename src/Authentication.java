@@ -5,9 +5,6 @@ import io.restassured.path.json.JsonPath;
 
 
 public class Authentication {
-
-	// LOGIN
-
 	public static String ObtenerToken() {
 		RestAssured.baseURI = "https://login.microsoftonline.com";
 
@@ -27,4 +24,5 @@ public class Authentication {
 		// System.out.println(token);
 		return token;
 	}
+
 }
